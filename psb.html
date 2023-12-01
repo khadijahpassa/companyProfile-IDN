@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/svg/IDNlogo.svg" type="image/x-icon">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Admission of New Students | IDN Boarding School Akhwat</title>
+</head>
+<body>
+     <!-- navbar -->
+     <header class="header">
+        <a href="index.html" class="logo">
+            <img src="assets/svg/IDNlogo-full.svg" alt="IDN Boarding School">
+        </a>
+        <i class='bx bx-menu'id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#achievement">Achievements</a>
+            <a href="psb.html"><span class="nav-active">PSB</span></a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <!-- navbar end -->
+
+    <section class="psb">
+        <div class="card-psb">
+            <h2>Register Account</h2>
+            <p>
+                Please fill in the data below to create an account on the <bold class="bold">IDN Boarding School Online PSB Application.</bold>
+            </p>
+
+            <hr class="hr-text" data-content="Student data"></hr>
+            <form action="POST">
+                <div class="input-box">
+                    <label for="full-name">Student's Full Name</label>
+                    <input type="text" name="full-name" id="full-name">
+                    
+                </div>
+                
+                <div class="gender">
+                    <label for="gender">Gender</label>
+                    
+                    <div>
+                        <div class="choice">
+                            <input type="radio" name="gender" id="male" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="choice">
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        
+                    </div>
+            
+                </div>
+                
+
+                <div class="select">
+                    <label for="info-idn">Where do you know about IDN?</label>
+                    <select class="form-select" name="info_idn" required>
+                        <option value="">-- Choose --</option>
+                                                            <option value="1">Google</option>
+                                                            <option value="2">Facebook</option>
+                                                            <option value="3">Instagram</option>
+                                                            <option value="4">Youtube</option>
+                                                            <option value="5">WhatsApp</option>
+                                                            <option value="6">Parents of IDN students</option>
+                                                            <option value="7">Friends</option>
+                                                            <option value="8">Teacher</option>
+                                                            <option value="9">School</option>
+                                                            <option value="10">Others</option>
+                                                    </select>
+    
+                </div>                
+                
+                <div class="select">
+                    <label for="info-branch">Branch selection</label>
+                    <select class="form-select" name="info_branch" required>
+                        <option value="">-- Choose --</option>
+                                                            <option value="1">IDN Jonggol Ikhwan</option>
+                                                            <option value="2">IDN Jonggol Akhwat</option>
+                                                            <option value="3">IDN Pamijahan Bogor</option>
+                                                            <option value="4">IDN Sentul (Backpacker School)</option>
+                                                            <option value="5">IDN Malang</option>
+                                                            <option value="6">IDN Solo</option>
+                                                    </select>
+    
+                </div>                
+        
+                <label for="alamat">Address</label>
+                <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea>
+                
+                <hr class="hr-text" data-content="Login Data"></hr>
+
+                <div class="input-box">
+                    <label for="number">WhatsApp Number</label>
+                    <input type="number" name="number" id="number">
+                    
+                </div>
+
+                <div class="input-box">
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass">
+                    
+                </div>
+                <button type="submit" class="btn" onclick="location.href='index.html'">Save</button>
+                
+                
+            </form>
+        </div>
+
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
